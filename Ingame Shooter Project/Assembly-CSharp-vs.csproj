@@ -50,6 +50,7 @@
      <Compile Include="Assets\Example Games\Angry Birds Style\Scripts\ProjectileFollow.cs" />
      <Compile Include="Assets\Example Games\Angry Birds Style\Scripts\Resetter.cs" />
      <Compile Include="Assets\Example Games\Angry Birds Style\Scripts\TargetDamage.cs" />
+     <Compile Include="Assets\Scripts\ControllingCameraAspectScript.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\ShootScript1.cs" />
