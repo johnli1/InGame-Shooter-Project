@@ -19,11 +19,11 @@ public class GameManager : MonoBehaviour {
 
 	public void LoadRedAmmo()
 	{
-		Instantiate (redAmmo, new Vector2 (-6f, -0.025f), Quaternion.identity);
+		Instantiate (redAmmo, new Vector2 (-5.8f, -1.85f), Quaternion.identity);
 	}
 
 	public void LoadBlueAmmo()
 	{
-		Instantiate (blueAmmo, new Vector2 (-6f, -0.025f), Quaternion.identity);
+		Instantiate (blueAmmo, new Vector2 (-5.8f, -01.85f), Quaternion.identity);
 	}
 }

@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{B631ECFC-FA40-EC4A-2168-D6C97376499D}") = "Ingame Shooter Project", "Assembly-CSharp-firstpass-vs.csproj", "{14FF9327-D1FE-1191-96FD-7E1BB7575018}"
+EndProject
 Project("{B631ECFC-FA40-EC4A-2168-D6C97376499D}") = "Ingame Shooter Project", "Assembly-CSharp-vs.csproj", "{79B944CC-2481-F89A-A7FB-1264C6A31C23}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14FF9327-D1FE-1191-96FD-7E1BB7575018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FF9327-D1FE-1191-96FD-7E1BB7575018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FF9327-D1FE-1191-96FD-7E1BB7575018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FF9327-D1FE-1191-96FD-7E1BB7575018}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79B944CC-2481-F89A-A7FB-1264C6A31C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{79B944CC-2481-F89A-A7FB-1264C6A31C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79B944CC-2481-F89A-A7FB-1264C6A31C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																											GlobalSection(MonoDevelopProperties) = preSolution
+																															GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

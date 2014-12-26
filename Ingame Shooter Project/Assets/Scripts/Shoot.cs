@@ -124,6 +124,7 @@ public class Shoot : MonoBehaviour {
 		spring.enabled = true;
 		rigidbody2D.isKinematic = false;
 		clickedOn = false;
+
 	}
 	
 	void Dragging(){
@@ -163,6 +164,25 @@ public class Shoot : MonoBehaviour {
 			t += spacing;
 			v3.y = y * t + 0.5f * Physics2D.gravity.y * t * t + transform.position.y;
 			line[i].transform.position = v3;
+		}
+	}
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.gameObject.tag == "Red Enemy" && gameObject.tag == "Red Ammo")
+		{
+			Destroy(gameObject);
+			Destroy(other.gameObject);
+		}
+
+		if (other.gameObject.tag == "Blue Enemy" && gameObject.tag == "Blue Ammo")
+		{
+			Destroy(gameObject);
+			Destroy(other.gameObject);
+		}
+
+		if (other.gameObject.tag == "Ground")
+		{
+			Destroy(gameObject, 1f);
 		}
 	}
 }
