@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 0d4ff0c0f714b2b47b5c9d0b0b018045
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: handSprite
+    21300002: handSprite_0
+    21300004: handSprite_1
+    21300006: handSprite_2
+    21300008: handSprite_3
+    21300010: handSprite_4
+    21300012: handSprite_5
+    21300014: handSprite_6
+    21300016: handSprite_7
+    21300018: handSprite_8
+    21300020: handSprite_9
+    21300022: handSprite_10
+    21300024: handSprite_11
+    21300026: handSprite_12
+    21300028: handSprite_13
+    21300030: handSprite_14
+    21300032: handSprite_15
+    21300034: handSprite_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: handSprite_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 534
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 547
+        width: 93
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 545
+        width: 105
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_3
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 546
+        width: 118
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_4
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 546
+        width: 124
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 546
+        width: 129
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 546
+        width: 141
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_7
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 546
+        width: 141
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 534
+        width: 149
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_9
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 534
+        width: 149
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_10
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 545
+        width: 117
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 316
+        width: 93
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_12
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 318
+        width: 99
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_13
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 318
+        width: 118
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_14
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 320
+        width: 139
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_15
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 320
+        width: 180
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: handSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 320
+        width: 290
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

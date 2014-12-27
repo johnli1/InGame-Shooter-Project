@@ -168,18 +168,6 @@ public class Shoot : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.tag == "Red Enemy" && gameObject.tag == "Red Ammo")
-		{
-			Destroy(gameObject);
-			Destroy(other.gameObject);
-		}
-
-		if (other.gameObject.tag == "Blue Enemy" && gameObject.tag == "Blue Ammo")
-		{
-			Destroy(gameObject);
-			Destroy(other.gameObject);
-		}
-
 		if (other.gameObject.tag == "Ground")
 		{
 			Destroy(gameObject, 1f);

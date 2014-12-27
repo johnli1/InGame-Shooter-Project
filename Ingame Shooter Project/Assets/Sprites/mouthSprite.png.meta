@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 3555f03449db66845b69b99a29378f2b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mouthSprite
+    21300002: mouthSprite_0
+    21300004: mouthSprite_1
+    21300006: mouthSprite_2
+    21300008: mouthSprite_3
+    21300010: mouthSprite_4
+    21300012: mouthSprite_5
+    21300014: mouthSprite_6
+    21300016: mouthSprite_7
+    21300018: mouthSprite_8
+    21300020: mouthSprite_13
+    21300022: mouthSprite_14
+    21300024: mouthSprite_17
+    21300026: mouthSprite_18
+    21300028: mouthSprite_21
+    21300030: mouthSprite_22
+    21300032: mouthSprite_23
+    21300034: mouthSprite_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mouthSprite_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 541
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 541
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 541
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 538
+        width: 69
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 538
+        width: 66
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 538
+        width: 67
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 538
+        width: 67
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_7
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 541
+        width: 69
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_8
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 541
+        width: 69
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_13
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 311
+        width: 69
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_14
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 311
+        width: 93
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 313
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_18
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 311
+        width: 134
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_21
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 309
+        width: 138
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_22
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 305
+        width: 89
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 305
+        width: 51
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouthSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 309
+        width: 144
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
