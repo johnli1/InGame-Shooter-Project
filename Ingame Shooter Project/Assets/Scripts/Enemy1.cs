@@ -2,11 +2,11 @@ using UnityEngine;
 using System.Collections;
 
 
-public class Enemy : MonoBehaviour 
+public class Enemy1 : MonoBehaviour 
 {
 	private bool isWalking;
 	private Animator anim;
-	public float speed;
+	public float speed1;
 
 	// Use this for initialization
 	void Start () 
@@ -21,10 +21,10 @@ public class Enemy : MonoBehaviour
 	void Update ()
 	{
 		if(isWalking)
-			iTween.MoveAdd (gameObject, new Vector3 (speed, 0f, 0f), 0.45f);
+			iTween.MoveAdd (gameObject, new Vector3 (speed1, 0f, 0f), 0.45f);
 	}
 	void getRandSpeed(){
-		speed = (float)Random.Range(-0.15f, -0.6f);
+		speed1 = (float)Random.Range(-0.15f, -0.6f);
 	}
 
 	void OnCollisionEnter2D(Collision2D other)
