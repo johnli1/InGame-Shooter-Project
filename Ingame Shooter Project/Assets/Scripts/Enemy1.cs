@@ -4,17 +4,28 @@ using System.Collections;
 
 public class Enemy1 : MonoBehaviour 
 {
+	public GameObject redAmmo;
 	private bool isWalking;
 	private Animator anim;
 	public float speed1;
-
+	private int killValue = 100;
+	private Vector3 startPos;
 	// Use this for initialization
 	void Start () 
 	{
+		startPos = transform.position;
 		isWalking = true;
 		anim = gameObject.GetComponent<Animator> ();
 		anim.SetBool ("Walking", true);
 		getRandSpeed ();
+	}
+	void reStart(){
+		isWalking = true;
+		anim = gameObject.GetComponent<Animator> ();
+		anim.SetBool("Die", false);
+		anim.SetBool ("Walking", true);
+		getRandSpeed ();
+		Instantiate (redAmmo, new Vector2 (-5.8f, -1.85f), Quaternion.identity);
 	}
 	
 	// Update is called once per frame
@@ -29,28 +40,17 @@ public class Enemy1 : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.tag == "Red Ammo" && gameObject.tag == "Red Enemy")
+		if (other.gameObject.tag == "Red Ammo" && gameObject.tag == "Red Enemy") // Mouth
 		{
+			GameManager.currentScore += killValue;
 			isWalking = false;
 			Destroy(other.gameObject);
 			anim.SetBool("Die", true);
+			//reStart();
 			Destroy (gameObject, 1f);
+
 		}
-		
-		if (other.gameObject.tag == "Blue Ammo" && gameObject.tag == "Blue Enemy") 
-		{
-			isWalking = false;
-			Destroy(other.gameObject);
-			anim.SetBool("Die", true);
-			Destroy (gameObject, 1f);
-		}
-		
-		if (other.gameObject.tag == "Eye Ammo" && gameObject.tag == "Eye Enemy") {
-			isWalking = false;
-			Destroy (other.gameObject);
-			anim.SetBool ("Die", true);
-			Destroy (gameObject, 1f);
-		} else {
+		 else {
 			Destroy (other.gameObject);
 		}
 	}

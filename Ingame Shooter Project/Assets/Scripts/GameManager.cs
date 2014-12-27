@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour {
 	public GameObject redAmmo;
 	public GameObject blueAmmo;
 	public GameObject EyeAmmo;
+	public static int currentScore = 0;
+
 
 	// Use this for initialization
 	void Start ()
@@ -16,6 +18,10 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnGUI(){
+
 	}
 
 	public void LoadRedAmmo()
