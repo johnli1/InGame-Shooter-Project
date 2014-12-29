@@ -6,11 +6,13 @@ TagManager:
   - 
   - Red Enemy
   - Red Ammo
-  - Ground
+  - Spawner
   - Blue Enemy
   - Blue Ammo
   - Eye Enemy
   - Eye Ammo
+  - Ground1
+  - Damager
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

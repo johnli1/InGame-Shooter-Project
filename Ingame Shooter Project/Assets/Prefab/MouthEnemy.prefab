@@ -11,7 +11,6 @@ GameObject:
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
   - 95: {fileID: 9500000}
-  - 111: {fileID: 11100000}
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: MouthEnemy
@@ -67,20 +66,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &11100000
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 3e85bac7619329347aef86983f24e964, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -92,6 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5204f3f035be9b47800d343ef319fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: -.100000001
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

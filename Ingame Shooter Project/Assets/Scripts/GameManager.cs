@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour {
 	public GameObject EyeAmmo;
 	public static int currentScore = 0;
 
+	public static int killCount = 0;
+	 
+
+
+
 
 	// Use this for initialization
 	void Start ()
@@ -16,8 +21,14 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
+
+	}
+
+	void WaveManager()
+	{
+
 	}
 
 	void OnGUI(){

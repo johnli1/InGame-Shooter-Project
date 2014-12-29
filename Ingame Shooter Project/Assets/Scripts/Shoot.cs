@@ -27,6 +27,8 @@ public class Shoot : MonoBehaviour {
 	private Vector3 home;
 	public int force = 6;
 	private float actualForce = 0;
+
+	private Animator anim;
 	
 
 	
@@ -47,7 +49,7 @@ public class Shoot : MonoBehaviour {
 	void Start () {
 
 
-
+		anim = gameObject.GetComponent<Animator> ();
 		LineRendererSetup ();
 		rayToMouse = new Ray (catapult.position, Vector3.zero);
 		leftCatapultToProjectile = new Ray (catapultLineFront.transform.position, Vector3.zero);
@@ -124,6 +126,7 @@ public class Shoot : MonoBehaviour {
 		spring.enabled = true;
 		rigidbody2D.isKinematic = false;
 		clickedOn = false;
+		anim.SetBool ("Fired", true);
 
 	}
 	
@@ -168,9 +171,9 @@ public class Shoot : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.tag == "Ground")
+		if (other.gameObject.tag == "Ground1")
 		{
-			Destroy(gameObject, 1f);
+			Destroy(gameObject);
 		}
 	}
 }
