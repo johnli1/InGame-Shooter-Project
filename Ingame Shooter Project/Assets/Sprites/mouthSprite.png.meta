@@ -55,7 +55,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 75
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -89,15 +89,15 @@ TextureImporter:
         width: 68
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_3
       rect:
         serializedVersion: 2
         x: 1236
-        y: 538
+        y: 574
         width: 69
-        height: 106
+        height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,9 +105,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1471
-        y: 538
+        y: 583
         width: 66
-        height: 141
+        height: 96
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,9 +115,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1701
-        y: 538
+        y: 593
         width: 67
-        height: 141
+        height: 86
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,9 +125,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1927
-        y: 538
+        y: 574
         width: 67
-        height: 108
+        height: 72
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,7 +139,7 @@ TextureImporter:
         width: 69
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_8
       rect:
@@ -149,7 +149,7 @@ TextureImporter:
         width: 69
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_13
       rect:
@@ -159,7 +159,7 @@ TextureImporter:
         width: 69
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_14
       rect:
@@ -169,7 +169,7 @@ TextureImporter:
         width: 93
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_17
       rect:
@@ -179,7 +179,7 @@ TextureImporter:
         width: 69
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_18
       rect:
@@ -189,7 +189,7 @@ TextureImporter:
         width: 134
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_21
       rect:
@@ -209,7 +209,7 @@ TextureImporter:
         width: 89
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_23
       rect:
@@ -219,7 +219,7 @@ TextureImporter:
         width: 51
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: mouthSprite_16
       rect:

@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour 
 {
-	private bool isWalking;
+	public bool isWalking;
 	private Animator anim;
 	public float speed;
 	private int killValue = 100;
@@ -24,7 +24,9 @@ public class Enemy : MonoBehaviour
 	void Update ()
 	{
 		if(isWalking)
-			iTween.MoveAdd (gameObject, new Vector3 (speed, 0f, 0f), 0.45f);
+		{
+			iTween.MoveAdd (gameObject, new Vector3 (speed, 0f, 0f), 0.2f);
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D other)
@@ -58,7 +60,11 @@ public class Enemy : MonoBehaviour
 
 		
 		}
-		
+		if (other.gameObject.tag == "Ground1")
+		{
+			print ("hi");
+			rigidbody2D.AddForce(Vector2.up * 300f * Time.deltaTime, ForceMode2D.Impulse);
+		}
 	 	else 
 		{
 			Destroy (other.gameObject);

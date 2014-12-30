@@ -1,37 +1,27 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections; 
+
 using System.Collections.Generic;
 
-[System.Serializable]
-public class WaveAction
+[System.Serializable] 
+public class WaveAction { public string name; public float delay; public Transform prefab; public int spawnCount; public string message; }
+
+[System.Serializable] 
+public class Wave { public string name; public List<WaveAction> actions; }
+
+public class WaveGenerator : MonoBehaviour 
 {
-	public string name;
-	public float delay;
-	public Transform prefab;
-	public int spawnCount;
-	public string message;
-}
-
-[System.Serializable]
-public class Wave
-{
-	public string name;
-	public List<WaveAction> actions;
-}
-
-
-
-public class WaveGenerator : MonoBehaviour
-{
-	public float difficultyFactor = 0.9f;
 	public List<Wave> waves;
 	private Wave m_CurrentWave;
 	public Wave CurrentWave { get {return m_CurrentWave;} }
-	private float m_DelayFactor = 1.0f;
+
+	void Start()
+	{
+		StartCoroutine(SpawnLoop());
+	}
 	
 	IEnumerator SpawnLoop()
 	{
-		m_DelayFactor = 1.0f;
 		while(true)
 		{
 			foreach(Wave W in waves)
@@ -40,28 +30,23 @@ public class WaveGenerator : MonoBehaviour
 				foreach(WaveAction A in W.actions)
 				{
 					if(A.delay > 0)
-						yield return new WaitForSeconds(A.delay * m_DelayFactor);
+						yield return new WaitForSeconds(A.delay);
 					if (A.message != "")
 					{
-						print(A.message);
-					}
+						// TODO: print ingame message
+					} 
 					if (A.prefab != null && A.spawnCount > 0)
 					{
 						for(int i = 0; i < A.spawnCount; i++)
 						{
-							Instantiate(A.prefab, transform.position, Quaternion.identity);
-						}
+							Instantiate (A.prefab,transform.position, Quaternion.identity);
+						}						
 					}
 				}
-				yield return null;  // prevents crash if all delays are 0
+
+				yield return null; // prevents crash if all delays are 0
 			}
-			m_DelayFactor *= difficultyFactor;
-			yield return null;  // prevents crash if all delays are 0
+			yield return null; // prevents crash if all delays are 0
 		}
 	}
-	void Start()
-	{
-		StartCoroutine(SpawnLoop());
-	}
-	
 }

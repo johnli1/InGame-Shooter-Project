@@ -23,16 +23,7 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
-	}
-
-	void WaveManager()
-	{
-
-	}
-
-	void OnGUI(){
-
+		print (Time.time);
 	}
 
 	public void LoadRedAmmo()

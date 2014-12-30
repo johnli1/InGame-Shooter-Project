@@ -12,8 +12,8 @@ GameObject:
   - 231: {fileID: 23100000}
   - 114: {fileID: 11400000}
   - 95: {fileID: 9500000}
-  - 60: {fileID: 6000000}
   - 212: {fileID: 21200000}
+  - 58: {fileID: 5800000}
   m_Layer: 0
   m_Name: Projectile 1
   m_TagString: Red Ammo
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -2, z: 0}
+  m_LocalPosition: {x: -5.80760002, y: -1.86059999, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,7 +39,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: .5
+  m_Mass: .100000001
   m_LinearDrag: .100000001
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -48,8 +48,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!60 &6000000
-PolygonCollider2D:
+--- !u!58 &5800000
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -57,32 +57,8 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: .479999989, y: -.165000007}
-      - {x: .479999989, y: .00499999989}
-      - {x: .370000005, y: .135000005}
-      - {x: .140000001, y: .264999986}
-      - {x: -.150000006, y: .294999987}
-      - {x: -.239999995, y: .335000008}
-      - {x: -.319999993, y: .335000008}
-      - {x: -.300000012, y: .254999995}
-      - {x: -.239999995, y: .135000005}
-      - {x: -.430000007, y: .125}
-      - {x: -.479999989, y: .075000003}
-      - {x: -.479999989, y: .00499999989}
-      - {x: -.400000006, y: -.0450000018}
-      - {x: -.200000003, y: -.0350000001}
-      - {x: -.389999986, y: -.155000001}
-      - {x: -.379999995, y: -.194999993}
-      - {x: -.119999997, y: -.254999995}
-      - {x: -.25999999, y: -.264999986}
-      - {x: -.25, y: -.305000007}
-      - {x: -.180000007, y: -.335000008}
-      - {x: .100000001, y: -.335000008}
-      - {x: .310000002, y: -.294999987}
-      - {x: .400000006, y: -.264999986}
-      - {x: .469999999, y: -.185000002}
+  m_Radius: .485000014
+  m_Center: {x: 0, y: 0}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
