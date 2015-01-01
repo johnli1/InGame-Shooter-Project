@@ -6,10 +6,10 @@ public class Shoot : MonoBehaviour {
 	//variables for catapult
 	public float maxStretch = 2.0f;
 	public LineRenderer catapultLineFront;
-	public LineRenderer catapultLineBack;
+//	public LineRenderer catapultLineBack;
 
 	private GameObject catapultLineFrontGO;
-	private GameObject catapultLineBackGO;
+//	private GameObject catapultLineBackGO;
 	
 	private SpringJoint2D spring;
 	private Transform catapult;
@@ -19,6 +19,9 @@ public class Shoot : MonoBehaviour {
 	private float circleRadius;
 	private Vector2 prevVelocity;
 	private bool clickedOn = false;
+
+	public GameObject primitiveME;
+	public GameObject primitivePos;
 	
 	//prediction line
 	int samples = 25;
@@ -29,18 +32,24 @@ public class Shoot : MonoBehaviour {
 	private float actualForce = 0;
 
 	private Animator anim;
+	private Animator scientistAnim;
+
+	private SpriteRenderer sRenderer;
 	
 
 	
 	void Awake(){
 
-		spring = GetComponent<SpringJoint2D> ();
-		catapultLineBackGO = GameObject.Find ("Catapult");
-		catapultLineFrontGO = GameObject.Find ("CatapultFront");
 
-		catapultLineBack = catapultLineBackGO.GetComponent <LineRenderer>();
+
+		spring = GetComponent<SpringJoint2D> ();
+//		catapultLineBackGO = GameObject.Find ("Catapult");
+		catapultLineFrontGO = GameObject.Find ("Scientist");
+		scientistAnim = catapultLineFrontGO.GetComponent<Animator> ();
+
+//		catapultLineBack = catapultLineBackGO.GetComponent <LineRenderer>();
 		catapultLineFront = catapultLineFrontGO.GetComponent <LineRenderer>();
-		spring.connectedBody = catapultLineBackGO.GetComponent<Rigidbody2D> ();
+		spring.connectedBody = catapultLineFrontGO.GetComponent<Rigidbody2D> ();
 
 		catapult = spring.connectedBody.transform;
 	}
@@ -48,7 +57,9 @@ public class Shoot : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		sRenderer = gameObject.GetComponent<SpriteRenderer> ();
 
+		GameManager.ammoLoaded = true;
 		anim = gameObject.GetComponent<Animator> ();
 		LineRendererSetup ();
 		rayToMouse = new Ray (catapult.position, Vector3.zero);
@@ -69,7 +80,6 @@ public class Shoot : MonoBehaviour {
 	}
 	
 	void FixedUpdate(){
-		
 		if (clickedOn)
 			DisplayLine ();
 	}
@@ -87,9 +97,10 @@ public class Shoot : MonoBehaviour {
 		if (spring != null) {
 			if(!rigidbody2D.isKinematic && prevVelocity.sqrMagnitude > rigidbody2D.velocity.sqrMagnitude){
 				Destroy (spring);
+				GameManager.ammoLoaded = false;
 				rigidbody2D.velocity = prevVelocity;
 				for (int i = 0; i < line.Length; i++){
-					Destroy(line[i]);
+				//	Destroy(line[i]);
 				}
 			}
 			if (!clickedOn)
@@ -98,39 +109,46 @@ public class Shoot : MonoBehaviour {
 			LineRendererUpdate();
 		} else {
 			catapultLineFront.enabled = false;
-			catapultLineBack.enabled = false;
+		//	catapultLineBack.enabled = false;
 		}
 		
 	}
 	
 	void LineRendererSetup(){
 		catapultLineFront.SetPosition (0, catapultLineFront.transform.position);
-		catapultLineBack.SetPosition (0, catapultLineBack.transform.position);
+	//	catapultLineBack.SetPosition (0, catapultLineBack.transform.position);
 		
 		
 		catapultLineFront.sortingLayerName = "Foreground";
-		catapultLineBack.sortingLayerName = "Foreground";
+	//	catapultLineBack.sortingLayerName = "Foreground";
 		
 		
 		catapultLineFront.sortingOrder = 3;
-		catapultLineBack.sortingOrder = 1;
+	//	catapultLineBack.sortingOrder = 1;
 		
 	}
 	
-	void OnMouseDown(){
+	void OnMouseDown()
+	{
+		sRenderer.enabled = false;
+		Instantiate (primitiveME, new Vector3(-7.381295f, 0.219643f, 0), Quaternion.identity);
+		scientistAnim.SetTrigger ("dragging");
 		spring.enabled = false;
 		clickedOn = true;
 	}
 	
 	void OnMouseUp(){
+		sRenderer.enabled = true;
+		scientistAnim.SetTrigger ("threw");
 		spring.enabled = true;
 		rigidbody2D.isKinematic = false;
 		clickedOn = false;
 		anim.SetBool ("Fired", true);
-
 	}
 	
 	void Dragging(){
+
+
 		Vector3 mouseWorldPoint = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		Vector2 catapultToMouse = mouseWorldPoint - catapult.position;
 		
@@ -147,10 +165,10 @@ public class Shoot : MonoBehaviour {
 	void LineRendererUpdate(){
 		
 		Vector2 catapultToProjectile = transform.position - catapultLineFront.transform.position;
-		leftCatapultToProjectile.direction = catapultToProjectile;
+	//	leftCatapultToProjectile.direction = catapultToProjectile;
 		Vector3 holdPoint = leftCatapultToProjectile.GetPoint (catapultToProjectile.magnitude + circleRadius);
-		catapultLineFront.SetPosition (1, holdPoint);
-		catapultLineBack.SetPosition (1, holdPoint);
+	//	catapultLineFront.SetPosition (1, holdPoint);
+	//	catapultLineBack.SetPosition (1, holdPoint);
 		
 	}
 	

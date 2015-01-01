@@ -15,6 +15,7 @@ public class WaveGenerator : MonoBehaviour
 	private Wave m_CurrentWave;
 	public Wave CurrentWave { get {return m_CurrentWave;} }
 
+
 	void Start()
 	{
 		StartCoroutine(SpawnLoop());
@@ -29,11 +30,14 @@ public class WaveGenerator : MonoBehaviour
 				m_CurrentWave = W;
 				foreach(WaveAction A in W.actions)
 				{
+					if(m_CurrentWave.name == "Wave 3")
+						Destroy(this);
+
 					if(A.delay > 0)
 						yield return new WaitForSeconds(A.delay);
 					if (A.message != "")
 					{
-						// TODO: print ingame message
+					
 					} 
 					if (A.prefab != null && A.spawnCount > 0)
 					{

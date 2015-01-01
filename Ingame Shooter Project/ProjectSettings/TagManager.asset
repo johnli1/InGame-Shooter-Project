@@ -12,7 +12,8 @@ TagManager:
   - Eye Enemy
   - Eye Ammo
   - Ground1
-  - Damager
+  - Scientist
+  - ProjectilePos
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -22,13 +23,13 @@ TagManager:
   Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: 
-  User Layer 9: 
-  User Layer 10: 
-  User Layer 11: 
-  User Layer 12: 
-  User Layer 13: 
-  User Layer 14: 
+  User Layer 8: Mouth
+  User Layer 9: Eye
+  User Layer 10: Hand
+  User Layer 11: MouthAmmo
+  User Layer 12: EyeAmmo
+  User Layer 13: HandAmmo
+  User Layer 14: Ground
   User Layer 15: 
   User Layer 16: 
   User Layer 17: 
@@ -50,4 +51,16 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: 1
+    userID: 1
+    uniqueID: 2329439063
+    locked: 0
+  - name: 2
+    userID: 2
+    uniqueID: 505224693
+    locked: 0
+  - name: 3
+    userID: 3
+    uniqueID: 886302005
     locked: 0

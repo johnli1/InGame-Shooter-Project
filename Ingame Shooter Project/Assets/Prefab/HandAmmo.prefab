@@ -13,8 +13,8 @@ GameObject:
   - 58: {fileID: 5800000}
   - 231: {fileID: 23100000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
-  m_Name: Projectile 2
+  m_Layer: 13
+  m_Name: HandAmmo
   m_TagString: Blue Ammo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,7 +38,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: .100000001
+  m_Mass: .0500000007
   m_LinearDrag: .100000001
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -69,10 +69,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71e5f7e981518349b81ff122da6bd0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxStretch: 1.79999995
+  maxStretch: 1.89999998
   catapultLineFront: {fileID: 0}
-  catapultLineBack: {fileID: 0}
-  force: 6
+  primitiveME: {fileID: 100000, guid: 0730edfb566654045a11d2b5082b7f74, type: 2}
+  primitivePos: {fileID: 0}
+  force: 5
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -94,7 +95,7 @@ SpriteRenderer:
   m_SortingLayerID: 404910065
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300020, guid: 164bd27d88f71c04084d958bb87ec38e, type: 3}
-  m_Color: {r: .117241383, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!231 &23100000
 SpringJoint2D:
   m_ObjectHideFlags: 1
@@ -103,8 +104,7 @@ SpringJoint2D:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 5000000, guid: c86af5aed013d6941895ef2a67f90d90,
-    type: 2}
+  m_ConnectedRigidBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: -.390000254, y: -5.88814402e-08}
   m_Distance: 1

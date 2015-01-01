@@ -13,7 +13,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HandEnemy
   m_TagString: Blue Enemy
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5204f3f035be9b47800d343ef319fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isWalking: 0
   speed: -.150000006
 --- !u!114 &11400002
 MonoBehaviour:
@@ -131,7 +132,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300002, guid: 0d4ff0c0f714b2b47b5c9d0b0b018045, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

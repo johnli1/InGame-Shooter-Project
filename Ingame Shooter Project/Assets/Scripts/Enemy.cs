@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 
 public class Enemy : MonoBehaviour 
@@ -28,9 +29,17 @@ public class Enemy : MonoBehaviour
 			iTween.MoveAdd (gameObject, new Vector3 (speed, 0f, 0f), 0.2f);
 		}
 	}
-
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.gameObject.tag == "Scientist")
+		{
+			isWalking = false;
+			StartCoroutine (MakeDamage());
+		}
+	}
 	void OnCollisionEnter2D(Collision2D other)
 	{		
+
 		if (other.gameObject.tag == "Blue Ammo" && gameObject.tag == "Blue Enemy") // Hand
 		{
 			GameManager.currentScore += killValue;
@@ -62,13 +71,24 @@ public class Enemy : MonoBehaviour
 		}
 		if (other.gameObject.tag == "Ground1")
 		{
-			print ("hi");
 			rigidbody2D.AddForce(Vector2.up * 300f * Time.deltaTime, ForceMode2D.Impulse);
 		}
 	 	else 
 		{
 			Destroy (other.gameObject);
 		}
+	}
+	IEnumerator MakeDamage()
+	{
+		GameManager.currentHealth -= 1;
+		yield return new WaitForSeconds (2);
+		GameManager.currentHealth -= 1;
+		yield return new WaitForSeconds (2);
+		GameManager.currentHealth -= 1;
+		yield return new WaitForSeconds (2);
+		GameManager.currentHealth -= 1;
+		yield return new WaitForSeconds (2);
+		GameManager.currentHealth -= 1;
 	}
 
 }

@@ -1,0 +1,356 @@
+fileFormatVersion: 2
+guid: c8f9194cf7d6d6d4f8cc55f387aa26f4
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: scientistSprite
+    21300002: scientistSprite_0
+    21300004: scientistSprite_1
+    21300006: scientistSprite_2
+    21300008: scientistSprite_3
+    21300010: scientistSprite_4
+    21300012: scientistSprite_5
+    21300014: scientistSprite_6
+    21300016: scientistSprite_7
+    21300018: scientistSprite_8
+    21300020: scientistSprite_9
+    21300022: scientistSprite_10
+    21300024: scientistSprite_11
+    21300026: scientistSprite_12
+    21300028: scientistSprite_13
+    21300030: scientistSprite_14
+    21300032: scientistSprite_15
+    21300034: scientistSprite_16
+    21300036: scientistSprite_17
+    21300038: scientistSprite_18
+    21300040: scientistSprite_19
+    21300042: scientistSprite_20
+    21300044: scientistSprite_21
+    21300046: scientistSprite_22
+    21300048: scientistSprite_23
+    21300050: scientistSprite_24
+    21300052: scientistSprite_25
+    21300054: scientistSprite_26
+    21300056: scientistSprite_27
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: scientistSprite_0
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2359
+        width: 203
+        height: 398
+      alignment: 9
+      pivot: {x: .18266432, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_1
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 2359
+        width: 203
+        height: 398
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2359
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 2359
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 2359
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 2359
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_6
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 2359
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_7
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 2359
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1892
+        width: 207
+        height: 403
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_9
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1887
+        width: 207
+        height: 403
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_10
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1887
+        width: 207
+        height: 403
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 1887
+        width: 207
+        height: 403
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_12
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 1887
+        width: 207
+        height: 403
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_13
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 1887
+        width: 207
+        height: 403
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_14
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 1887
+        width: 207
+        height: 403
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_15
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 1887
+        width: 207
+        height: 403
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_16
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1420
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_17
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1420
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1420
+        width: 207
+        height: 402
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 1420
+        width: 203
+        height: 398
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_20
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 1420
+        width: 203
+        height: 398
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 949
+        width: 207
+        height: 406
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_22
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 949
+        width: 240
+        height: 386
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 949
+        width: 369
+        height: 378
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 949
+        width: 171
+        height: 386
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_25
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 949
+        width: 402
+        height: 390
+      alignment: 9
+      pivot: {x: 0, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_26
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 949
+        width: 402
+        height: 390
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scientistSprite_27
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 949
+        width: 171
+        height: 386
+      alignment: 9
+      pivot: {x: .182664305, y: .825309396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -9,12 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 95: {fileID: 9500000}
   - 114: {fileID: 11400000}
-  - 60: {fileID: 6000000}
-  m_Layer: 9
-  m_Name: EyeEnemy
-  m_TagString: Eye Enemy
+  m_Layer: 13
+  m_Name: Hand Ammo Primitive
+  m_TagString: Blue Ammo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,50 +24,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.84000015, y: -3.19000006, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7, y: -2, z: 0}
+  m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!60 &6000000
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: .631542981, y: .0567915328}
-      - {x: .631542981, y: .393705606}
-      - {x: .260937482, y: .461088419}
-      - {x: -.0759766027, y: .477934122}
-      - {x: -.429736376, y: .477934122}
-      - {x: -.480273485, y: .461088419}
-      - {x: -.631884813, y: .275785685}
-      - {x: -.631884813, y: -.0274369884}
-      - {x: -.446582079, y: -.145356908}
-      - {x: .143017545, y: -.145356908}
-      - {x: .362011701, y: -.0779740959}
-      - {x: .395703107, y: .0567915328}
-      - {x: .597851574, y: .0231001247}
---- !u!95 &9500000
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 425a69fb19b3cfb4ead50e2dc0dd3378, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -78,11 +37,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5204f3f035be9b47800d343ef319fe0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d38830a6bace46419c378314c143d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWalking: 0
-  speed: -.300000012
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -101,9 +58,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300002, guid: ec3575d40daf18b48aa50fc11b2984c1, type: 3}
+  m_SortingLayerID: 404910065
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300020, guid: 164bd27d88f71c04084d958bb87ec38e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

@@ -8,15 +8,13 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 50: {fileID: 5000000}
-  - 231: {fileID: 23100000}
-  - 114: {fileID: 11400000}
-  - 95: {fileID: 9500000}
   - 212: {fileID: 21200000}
-  - 58: {fileID: 5800000}
+  - 50: {fileID: 5000000}
+  - 120: {fileID: 12000000}
+  - 95: {fileID: 9500000}
   m_Layer: 0
-  m_Name: Projectile 1
-  m_TagString: Red Ammo
+  m_Name: Scientist
+  m_TagString: Scientist
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.80760002, y: -1.86059999, z: 0}
-  m_LocalScale: {x: .5, y: .5, z: 1}
+  m_LocalPosition: {x: -7.24849987, y: .0868479982, z: 0}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -39,26 +37,15 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: .100000001
-  m_LinearDrag: .100000001
-  m_AngularDrag: 1
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5800000
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Radius: .485000014
-  m_Center: {x: 0, y: 0}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -68,27 +55,45 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2db367d0b6b659d44afaf19f85978ef1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 564858161159c0b4cbf8e1571ba13fe4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11400000
-MonoBehaviour:
+--- !u!120 &12000000
+LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d71e5f7e981518349b81ff122da6bd0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxStretch: 1.79999995
-  catapultLineFront: {fileID: 0}
-  catapultLineBack: {fileID: 0}
-  force: 6
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 15d3289ade5114e20a6254fa237f159b, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_Positions:
+  - {x: -10, y: -4.85935736, z: 0}
+  - {x: -11.0157642, y: -96.0717392, z: 0}
+  m_Parameters:
+    startWidth: .150000006
+    endWidth: .150000006
+    m_StartColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_EndColor:
+      serializedVersion: 2
+      rgba: 4294967295
+  m_UseWorldSpace: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -107,25 +112,10 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 164bd27d88f71c04084d958bb87ec38e, type: 3}
+  m_SortingLayerID: 404910065
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300002, guid: c8f9194cf7d6d6d4f8cc55f387aa26f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!231 &23100000
-SpringJoint2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 5000000, guid: c86af5aed013d6941895ef2a67f90d90,
-    type: 2}
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -.390000254, y: -5.88814402e-08}
-  m_Distance: 1
-  m_DampingRatio: 0
-  m_Frequency: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
