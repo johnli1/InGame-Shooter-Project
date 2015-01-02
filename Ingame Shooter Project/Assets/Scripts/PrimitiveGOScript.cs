@@ -20,5 +20,6 @@ public class PrimitiveGOScript : MonoBehaviour {
 		}
 		if (GameManager.ammoLoaded == false)
 						Destroy (gameObject);
+
 	}
 }

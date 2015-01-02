@@ -53,11 +53,14 @@
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\PrimitiveGOScript.cs" />
      <Compile Include="Assets\Scripts\ScoreUpdate.cs" />
-     <Compile Include="Assets\Scripts\Shoot.cs" />
+     <Compile Include="Assets\Scripts\Shoot1.cs" />
      <Compile Include="Assets\Scripts\WaveGenerator.cs" />
      <None Include="Assets\Fonts\LuckiestGuy\LICENSE.txt" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Fonts\PressStart2P-Regular\OFL.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/Jonatan/Documents/GitHub/InGame-Shooter-Project/Ingame Shooter Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
