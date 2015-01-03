@@ -3,8 +3,8 @@ using System.Collections;
 
 using System.Collections.Generic;
 
-public class GameManager : MonoBehaviour {
-
+public class GameManager : MonoBehaviour 
+{
 	public GameObject redAmmo;
 	public GameObject blueAmmo;
 	public GameObject EyeAmmo;
@@ -21,11 +21,14 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject handEnemy, mouthEnemy, eyeEnemy;
 
-
+	private GameObject defeatPanel;
 
 	// Use this for initialization
 	void Start ()
 	{
+		currentHealth = fullHealth;
+		defeatPanel = GameObject.FindGameObjectWithTag ("Defeat Panel");
+		defeatPanel.SetActive (false);
 		buttonHand = GameObject.FindGameObjectWithTag ("ButtonHand");
 		buttonMouth = GameObject.FindGameObjectWithTag("ButtonMouth");
 		buttonEye = GameObject.FindGameObjectWithTag ("ButtonEye");
@@ -40,6 +43,10 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if(currentHealth == 0)
+		{
+			defeatPanel.SetActive(true);
+		}
 	}
 
 	public void LoadRedAmmo()
@@ -52,7 +59,6 @@ public class GameManager : MonoBehaviour {
 
 		if (ammoLoaded == false)
 			Instantiate (redAmmo, new Vector2 (-7.381295f, 0.219643f), Quaternion.identity);
-
 	}
 
 	public void LoadBlueAmmo()
@@ -119,6 +125,9 @@ public class GameManager : MonoBehaviour {
 		}
 		EyesAnim.SetBool ("goHighlighted", false);
 		Time.timeScale = 1;
-		
+	}
+	public void RestartLevel()
+	{
+		Application.LoadLevel (0);
 	}
 }

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class Shoot1 : MonoBehaviour
 {
+	public AudioSource throwAudio;
+
 	public float force = 4.0f;
 	public int samples = 25;
 	public float spacing = 0.1f;
@@ -21,8 +23,7 @@ public class Shoot1 : MonoBehaviour
 	private GameObject scientistGo;
 
 	private SpriteRenderer sRenderer;
-
-		
+	
 	void Start () 
 	{
 		GameManager.ammoLoaded = true;
@@ -32,6 +33,8 @@ public class Shoot1 : MonoBehaviour
 
 		scientistGo = GameObject.FindGameObjectWithTag ("Scientist");
 		scientistAnim = scientistGo.GetComponent<Animator> ();
+		AudioSource[] audios = scientistGo.GetComponents<AudioSource> ();
+		throwAudio = audios [0];
 
 		home = transform.position;
 
@@ -39,11 +42,6 @@ public class Shoot1 : MonoBehaviour
 		for (var i = 0; i < argo.Length; i++)
 		{
 			argo[i] = GameObject.Instantiate (sample) as GameObject;
-//			Instantiate(sample);
-//			GameObject go = sample;
-//			go.collider2D.enabled = false;
-//			//go.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-//			argo[i] = go;
 		}
 	}
 	
@@ -79,6 +77,7 @@ public class Shoot1 : MonoBehaviour
 			Destroy(argo[i]);
 		}
 		sRenderer.enabled = true;
+		throwAudio.Play ();
 	}
 	
 	void DisplayIndicators() {
@@ -101,6 +100,4 @@ public class Shoot1 : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
-
 }
-

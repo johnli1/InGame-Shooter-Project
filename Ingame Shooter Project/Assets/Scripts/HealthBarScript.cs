@@ -8,7 +8,7 @@ public class HealthBarScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		currentHealth = GameManager.currentScore;
+		currentHealth = GameManager.currentHealth;
 		anim = gameObject.GetComponent<Animator> ();
 	}
 	

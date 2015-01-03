@@ -5,6 +5,11 @@ using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour 
 {
+	public AudioSource scienistHitAudio;
+	private GameObject scientistRef;
+
+	private AudioSource enemyDeathAudio;
+
 	public bool isWalking;
 	private Animator anim;
 	public float speed;
@@ -15,6 +20,12 @@ public class Enemy : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		scientistRef = GameObject.FindGameObjectWithTag ("Scientist");
+		AudioSource[] audios = scientistRef.GetComponents<AudioSource> ();
+		scienistHitAudio = audios [1];
+
+		enemyDeathAudio = GetComponent<AudioSource> ();
+
 		startPos = transform.position;
 		isWalking = true;
 		anim = gameObject.GetComponent<Animator> ();
@@ -44,6 +55,7 @@ public class Enemy : MonoBehaviour
 		{
 			GameManager.currentScore += killValue;
 			isWalking = false;
+			enemyDeathAudio.Play();
 			Destroy(other.gameObject);
 			anim.SetBool("Die", true);
 			Destroy (gameObject, 1f);
@@ -52,6 +64,7 @@ public class Enemy : MonoBehaviour
 		if (other.gameObject.tag == "Red Ammo" && gameObject.tag == "Red Enemy") // Mouth
 		{
 			GameManager.currentScore += killValue;
+			enemyDeathAudio.Play ();
 			isWalking = false;
 			Destroy(other.gameObject);
 			anim.SetBool("Die", true);
@@ -62,6 +75,7 @@ public class Enemy : MonoBehaviour
 
 		if (other.gameObject.tag == "Eye Ammo" && gameObject.tag == "Eye Enemy") { // Eye
 			GameManager.currentScore += killValue;
+			enemyDeathAudio.Play();
 			isWalking = false;
 			Destroy (other.gameObject);
 			anim.SetBool ("Die", true);
@@ -80,14 +94,19 @@ public class Enemy : MonoBehaviour
 	}
 	IEnumerator MakeDamage()
 	{
+		scienistHitAudio.Play ();
 		GameManager.currentHealth -= 1;
 		yield return new WaitForSeconds (2);
 		GameManager.currentHealth -= 1;
+		scienistHitAudio.Play ();
 		yield return new WaitForSeconds (2);
+		scienistHitAudio.Play ();
 		GameManager.currentHealth -= 1;
 		yield return new WaitForSeconds (2);
+		scienistHitAudio.Play ();
 		GameManager.currentHealth -= 1;
 		yield return new WaitForSeconds (2);
+		scienistHitAudio.Play ();
 		GameManager.currentHealth -= 1;
 	}
 

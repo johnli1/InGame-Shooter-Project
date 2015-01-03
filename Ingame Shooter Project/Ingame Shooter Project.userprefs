@@ -1,11 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Shoot1.cs">
     <Files>
-      <File FileName="Assets\Scripts\Enemy.cs" Line="21" Column="34" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="22" Column="52" />
-      <File FileName="Assets\Scripts\Shoot1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PrimitiveGOScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="122" Column="3" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="60" Column="30" />
+      <File FileName="Assets\Scripts\Shoot1.cs" Line="102" Column="3" />
       <File FileName="Assets\Scripts\WaveGenerator.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
