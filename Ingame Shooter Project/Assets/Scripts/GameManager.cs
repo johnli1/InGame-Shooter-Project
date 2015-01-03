@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 using System.Collections.Generic;
@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
 	public GameObject waveText;
 	public static int currentScore = 0;
+	public static bool HighScoreFlag;
 	public static int killCount = 0;
 	public static bool ammoLoaded = false;
 
@@ -49,6 +50,10 @@ public class GameManager : MonoBehaviour
 		if(currentHealth == 0)
 		{
 			defeatPanel.SetActive(true);
+			if(currentScore > PlayerPrefs.GetInt("HighScore")){
+				HighScoreFlag = true;
+				PlayerPrefs.SetInt("HighScore", currentScore);
+			}
 		}
 	}
 
