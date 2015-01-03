@@ -8,8 +8,9 @@ public class GameManager : MonoBehaviour
 	public GameObject redAmmo;
 	public GameObject blueAmmo;
 	public GameObject EyeAmmo;
-	public static int currentScore = 0;
 
+	public GameObject waveText;
+	public static int currentScore = 0;
 	public static int killCount = 0;
 	public static bool ammoLoaded = false;
 
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		waveText.transform.localScale = new Vector3 (0.1f, 0.1f, 0);
+		waveText.SetActive (false);
 		currentHealth = fullHealth;
 		defeatPanel = GameObject.FindGameObjectWithTag ("Defeat Panel");
 		defeatPanel.SetActive (false);
@@ -114,7 +117,7 @@ public class GameManager : MonoBehaviour
 		mouthAnim.SetBool ("goHighlighted", false);
 		Time.timeScale = 1;
 
-		yield return new WaitForSeconds (10f);
+		yield return new WaitForSeconds (9.0f);
 		buttonEye.SetActive (true);
 		EyesAnim.SetBool ("goHighlighted", true);
 		Time.timeScale = 0.0f;
@@ -125,6 +128,12 @@ public class GameManager : MonoBehaviour
 		}
 		EyesAnim.SetBool ("goHighlighted", false);
 		Time.timeScale = 1;
+
+		yield return new WaitForSeconds(5f);
+		waveText.SetActive (true);
+		iTween.ScaleTo (waveText, new Vector3 (3f, 3f, 0), 1f);
+		yield return new WaitForSeconds (2.5f);
+		waveText.SetActive (false);
 	}
 	public void RestartLevel()
 	{
